@@ -1,0 +1,59 @@
+{
+    "name": "bic-engine/preprocessor",
+    "description": "Simple C Preprocessor",
+    "license": "MIT",
+    "keywords": [
+        "ffi",
+        "parser",
+        "compiler",
+        "c",
+        "headers",
+        "preprocessor"
+    ],
+    "homepage": "https://github.com/BicEngine",
+    "support": {
+        "issues": "https://github.com/BicEngine/Foundation/issues",
+        "source": "https://github.com/BicEngine/Preprocessor"
+    },
+    "authors": [
+        {
+            "name": "Kirill Nesmeyanov",
+            "email": "nesk@xakep.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "psr/log": "^1.0",
+        "phplrt/lexer": "^3.1",
+        "phplrt/parser": "^3.1",
+        "phplrt/source": "^3.1",
+        "phplrt/exception": "^3.1",
+        "bic-engine/version": "^1.0",
+        "symfony/polyfill-php80": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bic\\Preprocessor\\": "src"
+        }
+    },
+    "require-dev": {
+        "monolog/monolog": "^2.1",
+        "phplrt/phplrt": "^3.1",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bic\\Preprocessor\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
