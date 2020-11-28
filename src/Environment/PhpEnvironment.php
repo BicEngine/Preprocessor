@@ -12,7 +12,6 @@ declare(strict_types=1);
 namespace Bic\Preprocessor\Environment;
 
 use Bic\Preprocessor\PreprocessorInterface;
-use Bic\Version\Version;
 
 final class PhpEnvironment implements EnvironmentInterface
 {
@@ -40,10 +39,6 @@ final class PhpEnvironment implements EnvironmentInterface
                 $this->define($pre, $constant, $value);
             }
         }
-
-        foreach ($this->getAdditionalDefines() as $constant => $value) {
-            $this->define($pre, $constant, $value);
-        }
     }
 
     /**
@@ -64,15 +59,6 @@ final class PhpEnvironment implements EnvironmentInterface
     private function define(PreprocessorInterface $pre, string $name, $value): void
     {
         $pre->define('__' . $name . '__', $this->toCLiteral($value));
-    }
-
-    /**
-     * @return iterable
-     */
-    private function getAdditionalDefines(): iterable
-    {
-        yield 'PHP_VERSION' => Version::fromString(\PHP_VERSION)->toInt();
-        yield 'ZEND_VERSION' => Version::fromString(\zend_version())->toInt();
     }
 
     /**

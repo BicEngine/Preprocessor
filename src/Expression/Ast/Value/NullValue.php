@@ -25,10 +25,9 @@ final class NullValue extends Value
     }
 
     /**
-     * @return null
+     * @return void
      */
-    public function eval()
+    public function eval(): void
     {
-        return null;
     }
 }

@@ -80,6 +80,7 @@ class Preprocessor implements PreprocessorInterface, LoggerAwareInterface
 
     /**
      * {@inheritDoc}
+     * @throws \ReflectionException
      */
     public function define(string $directive, $value = self::DEFAULT_VALUE): void
     {

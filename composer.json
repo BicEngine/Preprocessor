@@ -12,7 +12,7 @@
     ],
     "homepage": "https://github.com/BicEngine",
     "support": {
-        "issues": "https://github.com/BicEngine/Foundation/issues",
+        "issues": "https://github.com/BicEngine/Preprocessor/issues",
         "source": "https://github.com/BicEngine/Preprocessor"
     },
     "authors": [
@@ -28,7 +28,6 @@
         "phplrt/parser": "^3.1",
         "phplrt/source": "^3.1",
         "phplrt/exception": "^3.1",
-        "bic-engine/version": "^1.0",
         "symfony/polyfill-php80": "^1.18"
     },
     "autoload": {

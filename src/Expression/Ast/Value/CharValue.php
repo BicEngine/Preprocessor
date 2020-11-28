@@ -40,6 +40,6 @@ final class CharValue extends Value
     {
         $value = \substr($value, 1, -1);
 
-        return (int)\ord($value);
+        return \ord($value);
     }
 }

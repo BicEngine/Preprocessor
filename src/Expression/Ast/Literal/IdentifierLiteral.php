@@ -14,19 +14,6 @@ namespace Bic\Preprocessor\Expression\Ast\Literal;
 final class IdentifierLiteral extends Literal
 {
     /**
-     * @var string
-     */
-    private string $value;
-
-    /**
-     * @param string $value
-     */
-    public function __construct(string $value)
-    {
-        $this->value = $value;
-    }
-
-    /**
      * {@inheritDoc}
      */
     public function eval(): int

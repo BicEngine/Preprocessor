@@ -84,6 +84,7 @@ final class StandardEnvironment implements EnvironmentInterface
 
     /**
      * {@inheritDoc}
+     * @throws \Exception
      */
     public function applyTo(PreprocessorInterface $pre): void
     {
