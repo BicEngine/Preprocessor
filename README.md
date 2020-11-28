@@ -13,7 +13,7 @@ Library is available as composer repository and can be installed using the follo
 command in a root of your project.
 
 ```sh
-$ composer require bic/preprocessor
+$ composer require bic-engine/preprocessor
 ```
 
 ## Usage
